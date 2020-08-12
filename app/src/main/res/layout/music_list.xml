@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:contentPadding="10dp"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="2dp"
+    app:cardBackgroundColor="@color/colorYellow"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<!--        music info-->
+        <TextView
+            android:id="@+id/item_music_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/music_id_placeholder"
+            android:layout_centerVertical="true"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            />
+        <TextView
+            android:id="@+id/item_music_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/music_name_placeholder"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:singleLine="true"
+            android:layout_toEndOf="@id/item_music_id"
+            android:layout_marginStart="20dp"
+            />
+        <TextView
+            android:id="@+id/item_music_artist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/music_artist_placeholder"
+            android:textSize="14sp"
+            android:singleLine="true"
+            android:layout_below="@id/item_music_name"
+            android:layout_alignStart="@id/item_music_name"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:id="@+id/item_artist_album_separator"
+            android:layout_width="2dp"
+            android:layout_height="18dp"
+            android:layout_toEndOf="@id/item_music_artist"
+            android:layout_alignTop="@id/item_music_artist"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/artist_album_separator"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/item_music_album"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/music_album_placeholder"
+            android:layout_toEndOf="@id/item_artist_album_separator"
+            android:layout_alignTop="@id/item_artist_album_separator"
+            android:singleLine="true"
+            />
+        <TextView
+            android:id="@+id/item_music_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:text="@string/music_duration_placeholder"
+            android:textSize="14sp"
+            />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

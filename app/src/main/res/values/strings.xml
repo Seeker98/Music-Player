@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Music Player</string>
+    <!--    icons used from font-awesome start-->
+    <string name="angle_left">&#xf104;</string>
+    <string name="angle_right">&#xf105;</string>
+    <string name="pause">&#xf04c;</string>
+    <string name="play">&#xf04b;</string>
+    <string name="music">\uf001</string>
+    <!--    end-->
+    <!--    placeholders start-->
+    <string name="music_name_placeholder">#1f1e33</string>
+    <string name="music_artist_placeholder">Camellia(EDP)</string>
+    <string name="music_id_placeholder">1</string>
+    <string name="music_album_placeholder">Original</string>
+    <string name="music_duration_placeholder">00:00</string>
+    <string name="artist_album_separator">|</string>
+    <!--    end-->
+</resources>
